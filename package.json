@@ -1,0 +1,48 @@
+{
+  "name": "swiss-apis-cli",
+  "version": "1.0.0",
+  "description": "CLI for Swiss public APIs: transport, geo.admin.ch, opendata.swiss, Fedlex, OpenParlData, and more",
+  "type": "module",
+  "bin": {
+    "swiss": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:all": "npm test && npm run test:integration",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^12.1.0",
+    "dotenv": "^17.3.1",
+    "zod": "^3.22.0",
+    "zod-to-json-schema": "^3.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.1.1",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "cli",
+    "switzerland",
+    "swiss",
+    "opendata",
+    "transport",
+    "swisstopo"
+  ],
+  "license": "MIT"
+}
