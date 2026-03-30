@@ -7,8 +7,17 @@
     "swiss": "./dist/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    ".env.example"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clement8426/swiss-apis-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clement8426/swiss-apis-cli/issues"
+  },
+  "homepage": "https://github.com/clement8426/swiss-apis-cli#readme",
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts",

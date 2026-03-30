@@ -76,5 +76,4 @@ Some integration cases are skipped unless `OTD_API_KEY`, `ZEFIX_*`, or `FOODREPO
 
 ## Licence
 
-MIT
-# swiss-apis-cli
+MIT — see [LICENSE](LICENSE).
